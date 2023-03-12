@@ -14,7 +14,7 @@ const WelcomeSection = () => {
                     <p>We are having a sale on dog accessories all week</p>
                     <Link to= "/">Explore</Link>
                 </div>
-                <div class="welcome-image">
+                <div className="welcome-image">
                     <img src={welcomedog} alt="Dog from unsplash"></img>
                 </div>
             </div>
