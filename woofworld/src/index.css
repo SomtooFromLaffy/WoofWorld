@@ -24,14 +24,12 @@
 section{
   max-width: 95%;
   margin: 0 auto;
-  min-height: 95vh;
+  min-height: 85vh;
+  padding-bottom: 4em;
   /* border: 2px green solid; */
 }
 
-img{
-  opacity: 80%;    
-  
-}
+
 
 body {
   margin: 0;
