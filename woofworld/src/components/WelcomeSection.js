@@ -11,10 +11,11 @@ const WelcomeSection = () => {
                 <div className="welcome-text">
                     <span>Welcome to</span>
                     <h2>Woof World</h2>
-
+                    <p>We are having a sale on dog accessories all week</p>
+                    <Link to= "/">Explore</Link>
                 </div>
                 <div class="welcome-image">
-
+                    <img src={welcomedog} alt="Dog from unsplash"></img>
                 </div>
             </div>
         </section>
