@@ -1,0 +1,47 @@
+.services-grid{
+    display: grid;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px,50%), 1fr));
+    padding-bottom: 5em;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.service-image{
+    display:flex;
+    align-content: center;
+}
+
+.service-image img{
+    /* width:50px;  change on smaller screens*/
+    width:100px;
+    height:100%;
+    object-fit: contain;
+}
+
+.service-details{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.service-details span{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    color: var(--heading);
+}
+
+.service-details p{
+    padding: 5px; 
+    font-size: 1rem;
+    color: var(--oneshade);
+    /* font-size: 0.7rem;   coss  */
+}
