@@ -48,7 +48,6 @@
 }
 
 .welcome-text a:hover{
-    background-color: var(--action);
     transform: scale(1.2);
 }
 

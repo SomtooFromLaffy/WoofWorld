@@ -19,11 +19,11 @@ const Navbar = () => {
             {/* <div class="bx bx-menu" id="menu-icon"></div> */}
 
             <ul className={click ? "navbar active" : "navbar"}>
-                <li><Link to = "/landing-page">Home</Link></li>
-                <li><Link to = "/services">Services</Link></li>
-                <li><Link to = "/team">The Team</Link></li>
-                <li><Link to = "/About">About Us</Link></li>
-                <li><Link to = "/Contact">Contact Us</Link></li>
+                <li><Link to = "#landing-page">Home</Link></li>
+                <li><Link to = "#services">Services</Link></li>
+                <li><Link to = "#team">The Team</Link></li>
+                <li><Link to = "#About">About Us</Link></li>
+                <li><Link to = "#Contact">Contact Us</Link></li>
             </ul>
             <div className='hamburger' onClick={handleClick}>
                 {click ? (<FaTimes size={25} />) : (<FaBars size={25} />) }

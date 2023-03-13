@@ -49,6 +49,25 @@
     /* font-size: 0.7rem;   coss  */
 }
 
+.call-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.call-form a{
+    padding: 15px 30px;
+    width: 300px;
+    background-color: var(--action);
+    color: #ffff;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.call-form a:hover{
+    transform: scale(1.2);
+}
+
+
 
 @media screen and (max-width:700px) {
     .service-details span{
@@ -57,6 +76,5 @@
 
     .service-details p{
         font-size: 1.15rem;
-
     }
 }

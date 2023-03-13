@@ -1,5 +1,6 @@
 // import React, { useState, useEffect } from 'react'
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './ServicesStyles.css'
 
 import Serv from '../assets/json/services.json'
@@ -27,6 +28,9 @@ const Services = () => {
                     </div>
                 ))}
                 
+            </div>
+            <div className='call-form'>
+                <Link to= "/">Set Appointment</Link>
             </div>
         </section>
     </div>
