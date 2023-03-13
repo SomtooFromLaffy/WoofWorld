@@ -22,7 +22,7 @@ const Footer = () => {
                 <p> 
                     This is a learning project to showcase to hiring managers.
                     It makes use of React, HTML and CSS.
-                    It also incorporates using Git and Github tools via VS Code. It is also
+                    It also incorporates using Git and Github tools via VS Code. It is
                     mobile friendly.
                 </p>
 
