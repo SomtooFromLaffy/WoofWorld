@@ -27,7 +27,7 @@
 
 .member-image img,
 .rescue-image img{
-    width:250px;
+    width:450px;
     height:100%;
     object-fit: contain;
     border: none;
@@ -68,5 +68,10 @@
     .member-details p,
     .rescue-details p{
         font-size: 1.15rem;
+    }
+
+    .member-image img,
+    .rescue-image img{
+    width:350px;
     }
 }
