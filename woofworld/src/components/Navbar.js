@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li><Link to = "/Contact">Contact Us</Link></li>
             </ul>
             <div className='hamburger' onClick={handleClick}>
-                {click ? (<FaTimes />) : (<FaBars />) }
+                {click ? (<FaTimes size={25} />) : (<FaBars size={25} />) }
                 
             </div>
         </header>

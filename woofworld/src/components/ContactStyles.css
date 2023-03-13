@@ -1,0 +1,48 @@
+.Contact{
+    min-height: 20vh;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.contact-info h4{
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--action) ;
+}
+
+.contact-info p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--body);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+@media screen and (max-width:700px) {
+    .contact-info h4{
+        font-size: 1.6rem;
+    }
+    
+    .contact-info p{
+        font-size: 1.15rem;
+    }
+}
