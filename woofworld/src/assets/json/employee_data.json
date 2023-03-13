@@ -1,0 +1,35 @@
+{
+    "name" : "WoofWorld-Team",
+    "services" : [
+         {
+             "name": "Winny Churchill",
+             "icon": "vet.png",
+             "description": "Director"
+         },
+         {
+             "name": "Scott Walt",
+             "icon": "grooming.png",
+             "description": "Veterinarian"
+         },
+         {
+             "name": "Paul Mac",
+             "icon": "kennel.png",
+             "description": "Trainer"
+         },
+         {
+             "name": "Henry Eight",
+             "icon": "walk.png",
+             "description": "Groomer"
+         },
+         {
+             "name": "Mary Scotty",
+             "icon": "vaccine.png",
+             "description": "Dog Walker"
+         },
+         {
+             "name": "Bon Joe",
+             "icon": "leash.png",
+             "description": "Dog Walker"
+         }
+    ] 
+ }

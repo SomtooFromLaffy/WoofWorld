@@ -3,32 +3,32 @@
    "services" : [
         {
             "name": "Veterinarian",
-            "icon": "/images/vet.png",
+            "icon": "vet.png",
             "description": "Our veterinary clinic provides professional medical care for pets, including examinations, vaccinations, surgeries, and diagnostics. Our team is dedicated to keeping your furry family members healthy and happy."
         },
         {
             "name": "Grooming",
-            "icon": "/images/grooming.png",
+            "icon": "grooming.png",
             "description": "Our grooming services offer a range of options, from basic baths to full grooming packages. Our trained professionals provide compassionate care to help your dog look and feel their best."
         },
         {
             "name": "Boarding",
-            "icon": "/images/kennel.png",
+            "icon": "kennel.png",
             "description": "Our boarding services provide a safe, comfortable, and fun environment for your pets while you're away. Our experienced staff ensures your pet receives the best care and attention during their stay."
         },
         {
             "name": "Dog Walking",
-            "icon": "/images/walk.png",
+            "icon": "walk.png",
             "description": "Our dog walking service provides individual or group walks to keep your furry friend active and healthy. Our trained staff ensure your dog gets the exercise they need to thrive."
         },
         {
             "name": "Vaccinations",
-            "icon": "/images/vaccine.png",
+            "icon": "vaccine.png",
             "description": "Our vaccine services provide protection against common diseases that can harm your pet's health. Our experienced veterinarians can help you choose the right vaccines for your pet's specific needs."
         },
         {
             "name": "Accesories sale",
-            "icon": "/images/leash.png",
+            "icon": "leash.png",
             "description": "Our training services help teach your pet essential skills and behaviors to improve their relationship with you and others. Our experienced trainers use positive reinforcement techniques to ensure success."
         }
    ] 
