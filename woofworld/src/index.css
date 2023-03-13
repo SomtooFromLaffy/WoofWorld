@@ -29,7 +29,13 @@ section{
   /* border: 2px green solid; */
 }
 
-
+.heading{
+  text-align: center;
+  font-size: 3em; 
+  margin: 0 auto;
+  padding: 1em 0;
+  color: var(--heading);
+}
 
 body {
   margin: 0;
