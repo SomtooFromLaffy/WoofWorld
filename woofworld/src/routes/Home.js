@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from '../components/AboutUs';
 import Navbar from '../components/Navbar'
 import Services from '../components/Services'
 import Team from '../components/Team';
@@ -14,6 +15,7 @@ const Home = () => {
       <WelcomeSection />
       <Services />
       <Team />
+      <AboutUs />
     </div>
   )
 }

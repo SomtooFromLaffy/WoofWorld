@@ -1,0 +1,22 @@
+.mission-statements{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 0 auto;
+    padding-bottom: 5em;
+}
+
+
+.mission-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    flex: 2 1 auto;
+}
+
+.mission-text p{
+    font-size: 0.9rem;
+    padding: 20px;
+    color: var(--body);
+}
