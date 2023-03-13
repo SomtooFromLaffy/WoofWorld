@@ -6,7 +6,9 @@
   --body: #2D3142;
   --back: #EBEBEB;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
