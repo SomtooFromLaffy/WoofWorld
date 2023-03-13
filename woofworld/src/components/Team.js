@@ -15,8 +15,8 @@ const Team = () => {
                             <img src = {require(`../assets/images/${item['icon']}`)} alt=''></img>
                         </div>
                         <div className="member-details">
-                            <span>Team Member Name</span>
-                            <p>Team Member Position</p>
+                            <span>{item['name']}</span>
+                            <p>{item['description']}</p>
                         </div>
                     </div>
                 ))}
