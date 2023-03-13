@@ -5,7 +5,7 @@
     width: 90%;
     margin: 0 auto;
 
-    grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(500px,100%), 1fr));
     padding-bottom: 5em;
 }
 
@@ -45,7 +45,7 @@
 
 .member-details span,
 .rescue-details span{
-    font-size: 1rem;
+    font-size: 2.2rem;
     font-weight: 700;
     padding: 5px;
     color: var(--heading);
@@ -54,6 +54,19 @@
 .member-details p,
 .rescue-details p{
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: var(--body);
+}
+
+
+@media screen and (max-width:700px) {
+    .member-details span,
+    .rescue-details span{
+        font-size: 1.6rem;
+    }
+
+    .member-details p,
+    .rescue-details p{
+        font-size: 1.15rem;
+    }
 }

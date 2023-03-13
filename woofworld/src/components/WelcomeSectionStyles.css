@@ -20,7 +20,7 @@
 }
 
 .welcome-text span{
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     
 }
 
@@ -32,7 +32,7 @@
 }
 
 .welcome-text p{
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     margin: 1em 0;
     width: 100%;
 }
@@ -55,17 +55,29 @@
 .welcome-image{
     display: flex;
     align-items: center;
-    width:70%;
+    width:90%;
     /* change to 100% on smaller screens */
 }
 
 .welcome-image img{
-    width: 100%;
+    width: 70%;
     max-height: 700px;
 }
 
 @media screen and (max-width:700px) {
     .landing-page{
         padding-top: 9em;
+    }
+
+    .welcome-text p{
+        font-size: 1.3rem;
+    }
+
+    .welcome-text span{
+        font-size: 1.7rem;
+        
+    }
+    .welcome-image img{
+        width: 100%;
     }
 }

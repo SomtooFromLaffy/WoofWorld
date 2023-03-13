@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import welcomedog from '../assets/images/train3.jpg'
+import welcomedog from '../assets/images/cbp.jpg'
 import './WelcomeSectionStyles.css'
 
 const WelcomeSection = () => {

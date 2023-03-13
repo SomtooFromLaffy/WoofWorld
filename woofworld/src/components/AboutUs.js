@@ -1,12 +1,17 @@
 import React from 'react'
 import './AboutUsStyles.css'
+import vision from '../assets/images/miss.jpg'
+import mission from '../assets/images/his2.jpg'
+import history from '../assets/images/vis.jpg'
+
+
 const AboutUs = () => {
   return (
     <div>
-        <section class="About" id="About">
-            <h2 class="heading"> About Us </h2>
-            <div class="mission-statements">
-                <div class="mission-text">
+        <section className="About" id="About">
+            <h2 className="heading"> About Us </h2>
+            <div className="mission-statements">
+                <div className="mission-text">
                     <h2>Our History</h2>
                     <p>We began in 5th century CE when we first domesticated dogs.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -16,9 +21,12 @@ const AboutUs = () => {
                     voluptate aliquam veritatis explicabo. Accusantium laborum sunt 
                     repellendus fugit labore?
                     </p>
+                    <div className='img-contain'>
+                        <img src={history} alt=''></img>
+                    </div>
                 </div>
             
-                <div class="mission-text">
+                <div className="mission-text">
                     <h2>Our Mission</h2>
                     <p>We began in 5th century CE when we first domesticated dogs.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -28,9 +36,12 @@ const AboutUs = () => {
                     voluptate aliquam veritatis explicabo. Accusantium laborum sunt 
                     repellendus fugit labore?
                     </p>
+                    <div className='img-contain'>
+                        <img src={mission} alt=''></img>
+                    </div>
                 </div>
             
-                <div class="mission-text">
+                <div className="mission-text">
                     <h2>Our Vision</h2>
                     <p>We began in 5th century CE when we first domesticated dogs.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -40,6 +51,9 @@ const AboutUs = () => {
                     voluptate aliquam veritatis explicabo. Accusantium laborum sunt 
                     repellendus fugit labore?
                     </p>
+                    <div className='img-contain'>
+                        <img src={vision} alt=''></img>
+                    </div>
                 </div>
             </div>
         </section>
