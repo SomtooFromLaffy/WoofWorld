@@ -32,6 +32,7 @@ header {
 }
 
 .navbar a{
+    font-size: 1.3em;
     padding: 10px 20px;
     color: var(--heading);
 }
