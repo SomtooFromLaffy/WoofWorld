@@ -1,0 +1,80 @@
+form{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    max-width: 50%;
+    top: 45vh;
+    left:30%;
+    border: 2px green solid;
+
+}
+
+form h2{
+    text-align: center;
+    color: var(--heading);
+
+}
+
+form label{
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    color: var(--heading);
+
+}
+
+form input, textarea{
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.3em;
+}
+
+form fieldset p{
+    color:#1B1B1B;
+    font-size: .7em;
+}
+
+form fieldset legend{
+    color: #1B1B1B;;
+    font-size: 1.1em;
+}
+
+form fieldset label{
+    color: #1B1B1B;;
+    font-size: 1.1em;
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: var(--action);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+::placeholder {
+    color: #1B1B1B;
+    font-size: 1.5em;
+}
+
+.options{
+    display: flex;
+    padding: 20px;
+}
