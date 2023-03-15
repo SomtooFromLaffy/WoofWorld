@@ -21,11 +21,11 @@ const Navbar = () => {
             {/* <div class="bx bx-menu" id="menu-icon"></div> */}
 
             <ul className={click ? "navbar active" : "navbar"}>
-                <li><HashLink to = "#landing-page" smooth>Home</HashLink></li>
-                <li><HashLink to = "#services" smooth>Services</HashLink></li>
-                <li><HashLink to = "#team" smooth>The Team</HashLink></li>
-                <li><HashLink to = "#About" smooth >About Us</HashLink></li>
-                <li><HashLink to = "#Contact" smooth>Contact Us</HashLink></li>
+                <li><HashLink to = "#landing-page" smooth onClick={handleClick}>Home</HashLink></li>
+                <li><HashLink to = "#services" smooth onClick={handleClick}>Services</HashLink></li>
+                <li><HashLink to = "#team" smooth onClick={handleClick}>The Team</HashLink></li>
+                <li><HashLink to = "#About" smooth onClick={handleClick}>About Us</HashLink></li>
+                <li><HashLink to = "#Contact" smooth onClick={handleClick}>Contact Us</HashLink></li>
             </ul>
             <div className='hamburger' onClick={handleClick}>
                 {click ? (<FaTimes size={25} />) : (<FaBars size={25} />) }
