@@ -3,7 +3,7 @@ import AboutUs from '../components/AboutUs';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
-import ServiceForm from '../components/ServiceForm';
+// import ServiceForm from '../components/ServiceForm';
 import Services from '../components/Services'
 import Team from '../components/Team';
 import WelcomeSection from '../components/WelcomeSection'
@@ -21,7 +21,7 @@ const Home = () => {
       <AboutUs />
       <Contact />
       <Footer />
-      <ServiceForm />
+      {/* <ServiceForm /> */}
     </div>
   )
 }

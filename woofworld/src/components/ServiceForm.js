@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './ServiceFormStyles.css'
 
+import { useNavigate } from 'react-router-dom'
 
-function ServiceForm({ closeForm }) {
+  
+
+function ServiceForm({closeForm}) {
+  const navigate = useNavigate()
   const [formData, setFormData ] = useState({
     name : '',
     phone: '',
@@ -11,6 +15,14 @@ function ServiceForm({ closeForm }) {
     service: [],
     instruction: ''
   });
+
+  const [cancel, setCancel] = useState(closeForm);
+  const exit = () => {setCancel(!cancel)}
+  
+   useEffect(() =>{cancel ? navigate(-1) : console.log("Notyet")},
+               [cancel, navigate]
+             )
+
 
   const onChangeHandle = (e) =>{
     if (e.target.name === 'service'){
@@ -35,13 +47,15 @@ function ServiceForm({ closeForm }) {
        alert('Please pick a service')
     }else{
       console.log(formData);
-      closeForm()
+      // closeForm()
+      exit()
+      // navigate(-1)
     }
   }
   return (
-    <div>
+    <div className='overlay-div'>
         <section className="form">
-            <div>
+            <div className='bug-fix'>
                 
                 <form onSubmit={submitForm}>
                     <h2>Service Request Form</h2>
@@ -87,7 +101,7 @@ function ServiceForm({ closeForm }) {
                            ></textarea>
 
                     <div className='options'>
-                        <button type = 'button' onClick={closeForm}>Cancel</button>
+                        <button type = 'button' onClick={exit}>Cancel</button>
                         <button >Submit Booking</button>
                     </div> 
                     

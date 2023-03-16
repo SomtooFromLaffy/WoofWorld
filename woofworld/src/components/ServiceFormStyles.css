@@ -1,19 +1,46 @@
+/* .overlay-div{
+    width : 100vw;
+    height : 100vh;
+    background-color: #ffffff;
+    /* position: fixed; */
+    /* change to fixed on modal */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: 0.3s;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}  */
+
+
 form{
     /* position: absolute; */
     display: flex;
     flex-direction: column;
     padding: 1rem;
     margin: auto;
-    max-width: 50%;
-    top: 45vh;
-    left:30%;
-    border: 2px green solid;
+    max-width: 60%;
+    border-radius: 10px;
+    padding-top: 90px;
+}
 
+.error-fix{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 form h2{
     text-align: center;
     color: var(--heading);
+    /* background-color: #ffffff; */
 
 }
 
@@ -69,6 +96,20 @@ button:hover{
     transform: scale(1.2);
 }
 
+.call-form{
+    /* border: 2px solid; */
+    padding: 15px 30px;
+    width: 150px;
+    background-color: var(--action);
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.call-form a:hover{
+    transform: scale(1.2);
+}
+
 ::placeholder {
     color: #1B1B1B;
     font-size: 1.5em;
@@ -82,7 +123,7 @@ button:hover{
 @media screen and (max-width:700px) {
 
     form {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     form label{
@@ -126,6 +167,17 @@ button:hover{
         border: none;
         font-size: 0.7em;
     }
+
+    /* .overlay-div{
+        width : 100vw;
+        height : 100vh;
+        background-color: #ffffff;
+        position: fixed;
+        top:80px;
+        left:0;
+        bottom:80px;
+        right:0;
+    } */
     
 
 }
