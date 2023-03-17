@@ -1,14 +1,19 @@
-// import React, { useState, useEffect } from 'react'
+// import React, { useState } from 'react'
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './ServicesStyles.css'
-
 import Serv from '../assets/json/services.json'
+// import ServiceForm from './ServiceForm'
 
 
 
 
 const Services = () => {
   const Servicedata = Serv;
+
+    // const [formcall,setFormcall] = useState(false);
+    // const handleCall = () => {setFormcall(!formcall);
+    //                             console.log(formcall)}
 
   return (
     <div>
@@ -28,7 +33,14 @@ const Services = () => {
                 ))}
                 
             </div>
+            <div className='call-form2'>
+                {/* <button onClick={handleCall}>Set Appointment</button> */}
+                <Link to='/appointment'>Set Appointment</Link>
+            </div>
         </section>
+
+        {/* {formcall && <ServiceForm closeForm = {handleCall}/>} */}
+
     </div>
   )
 }

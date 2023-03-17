@@ -49,6 +49,48 @@
     /* font-size: 0.7rem;   coss  */
 }
 
+.call-form2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-form2 a{
+    /* border: 2px solid; */
+    padding: 15px 30px;
+    width: 250px;
+    font-size: 1.5rem;
+    background-color: var(--action);
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.call-form2 a:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* Form */
+
+
+
+
+button{
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: var(--action);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
 
 @media screen and (max-width:700px) {
     .service-details span{
@@ -57,6 +99,11 @@
 
     .service-details p{
         font-size: 1.15rem;
+    }
 
+    .call-form2 a{
+        width: 170px;
+        font-size: 0.9rem;
+        
     }
 }
