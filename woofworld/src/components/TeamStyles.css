@@ -1,3 +1,13 @@
+.note{
+    text-align: center;
+    font-size: 2em;
+    padding: 2em 0;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
 .team-grid,
 .rescue-grid{
     display: grid;
@@ -73,5 +83,12 @@
     .member-image img,
     .rescue-image img{
     width:350px;
+    }
+
+    .note{
+        font-size: 1em;
+    }
+    .drop{
+        padding-top: 3em;
     }
 }

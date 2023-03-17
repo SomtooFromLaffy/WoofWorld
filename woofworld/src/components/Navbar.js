@@ -18,7 +18,7 @@ const Navbar = () => {
             <HashLink to = "#landing-page" className="logo" >
                 <img src={logo} alt="Woof World Logo"></img>
             </HashLink>
-            {/* <div class="bx bx-menu" id="menu-icon"></div> */}
+
 
             <ul className={click ? "navbar active" : "navbar"}>
                 <li><HashLink to = "#landing-page" smooth onClick={handleClick}>Home</HashLink></li>

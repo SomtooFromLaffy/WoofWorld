@@ -10,7 +10,20 @@ header {
     /* z-index: 1000; */
     margin: 0 auto;
 }
+.logo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+}
 
+.logo2 i{
+    padding-top: 20px;
+}
+
+.logo2 img{
+    width:90px;
+}
 .logo{
     display: flex;
     align-items: center;

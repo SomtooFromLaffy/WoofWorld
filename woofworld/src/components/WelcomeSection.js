@@ -11,8 +11,8 @@ const WelcomeSection = () => {
                 <div className="welcome-text">
                     <span>Welcome to</span>
                     <h2>Woof World</h2>
-                    <p>We are having a sale on dog accessories all week</p>
-                    <Link to= "/">Explore</Link>
+                    <p>We just launched our rescue/adoption program</p>
+                    <Link to= "/adoption">Explore</Link>
                 </div>
                 <div className="welcome-image">
                     <img src={welcomedog} alt="Dog from unsplash"></img>
