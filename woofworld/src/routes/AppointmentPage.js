@@ -9,7 +9,7 @@ const AppointmentPage = () => {
 //   const navigate = useNavigate()
   return (
     <div>
-        <Navbar />
+        <Navbar />    
         <ServiceForm closeForm={false}/>
         <Contact />
         <Footer />

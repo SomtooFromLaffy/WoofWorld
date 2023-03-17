@@ -33,7 +33,7 @@ const Services = () => {
                 ))}
                 
             </div>
-            <div className='call-form'>
+            <div className='call-form2'>
                 {/* <button onClick={handleCall}>Set Appointment</button> */}
                 <Link to='/appointment'>Set Appointment</Link>
             </div>

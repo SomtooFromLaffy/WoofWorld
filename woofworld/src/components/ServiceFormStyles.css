@@ -123,11 +123,11 @@ button:hover{
 @media screen and (max-width:700px) {
 
     form {
-        max-width: 80%;
+        max-width: 90%;
     }
 
     form label{
-        font-size: 0.7em;
+        font-size: 1.3em;
     }
 
     form input, textarea{
@@ -135,7 +135,7 @@ button:hover{
     }
 
     form fieldset{
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 
     form fieldset p{
@@ -143,7 +143,7 @@ button:hover{
     }
     
     form fieldset legend{
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
     
     form fieldset label{
@@ -151,21 +151,22 @@ button:hover{
     }
 
     form p{
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     form h2{
-        font-size: 1.2em;
+        font-size: 1.9em;
+        padding-bottom: 30px;
     }
 
     form button{
         padding: 10px;
-        width: 100px;
+        width: 130px;
         margin: 0 auto;
         background-color: var(--action);
         color: white;
         border: none;
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     /* .overlay-div{

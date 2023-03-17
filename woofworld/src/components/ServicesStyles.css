@@ -49,11 +49,27 @@
     /* font-size: 0.7rem;   coss  */
 }
 
-.call-form{
+.call-form2{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.call-form2 a{
+    /* border: 2px solid; */
+    padding: 15px 30px;
+    width: 250px;
+    font-size: 1.5rem;
+    background-color: var(--action);
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.call-form2 a:hover{
+    transform: scale(1.2);
+}
+
 
 
 /* Form */
@@ -83,5 +99,11 @@ button:hover{
 
     .service-details p{
         font-size: 1.15rem;
+    }
+
+    .call-form2 a{
+        width: 170px;
+        font-size: 0.9rem;
+        
     }
 }
