@@ -3,6 +3,7 @@ import './ServiceFormStyles.css'
 
 import { useNavigate } from 'react-router-dom'
 
+
   
 
 function ServiceForm({closeForm}) {
@@ -55,41 +56,35 @@ function ServiceForm({closeForm}) {
   return (
     <div className='overlay-div'>
         <section className="form">
-            <div className='bug-fix'>
-                
                 <form onSubmit={submitForm}>
                     <h2>Service Request Form</h2>
-                    <label> Name </label>
-                    <input type="text"
-                           name = 'name' 
-                           onChange = {onChangeHandle}
-                           required />
-                    
-                    <label>Phone </label>
-                    <input type="tel"
-                           name = 'phone' 
-                           onChange = {onChangeHandle}
-                           required />
-                    
-                   <label>Email </label>
-                   <input type="email"
-                           name = 'email' 
-                           onChange = {onChangeHandle}
-                           required />
 
-                    <label> Pet Name </label>
-                    <input type="text"
-                           name = 'petname' 
-                           onChange = {onChangeHandle}
-                           required />
+                    {[{'id':'Name', 'type':'text'},
+                      {'id':'Phone', 'type':'tel'},
+                      {'id':'Email', 'type':'email'},
+                      {'id':'PetName', 'type':'text'}].map((data)=>{
 
-                   <fieldset>
+                        return (
+                          <div key = {data.id} className='datadiv'>
+                              <label> {data.id} </label>
+                              <input type={data.type}
+                                     name = {data.id} 
+                                     onChange = {onChangeHandle}
+                                      required />
+                          </div>
+                        )
+
+                      })}
+
+
+                   <fieldset className='field'>
                         <legend>Select Service</legend>
-                        <label> <input type="checkbox"  name='service' value='Grooming' onChange = {onChangeHandle} /> Grooming </label>
-                        <label> <input type="checkbox" name='service' value='Vet' onChange = {onChangeHandle} /> Vet</label>
-                        <label> <input type="checkbox" name='service' value='Boarding' onChange = {onChangeHandle} /> Boarding </label>
-                        <label> <input type="checkbox" name='service' value='Dog Walk' onChange = {onChangeHandle} /> Dog Walking </label>
-                        <label> <input type="checkbox" name='service' value='Vaccine' onChange = {onChangeHandle} /> Vaccinations </label>
+
+                        {['Grooming', 'Vet', 'Boarding', 'Dog Walking', 'Vaccinations', 'Dog Adoption'].map((servic)=>{
+                          return (
+                            <label key={servic}> <input type="checkbox"  name='service' value={servic} onChange = {onChangeHandle} /> {servic} </label>
+                          )
+                        })}
                         <p><em>At this time, our accesory service will only be in store until our developer gets to building the online store </em></p>
                     </fieldset>
                    <p><em>Fill in appointment day and time below</em></p>
@@ -106,7 +101,6 @@ function ServiceForm({closeForm}) {
                     </div> 
                     
                 </form>
-            </div>
         </section>
     </div>
   )

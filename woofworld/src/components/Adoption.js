@@ -1,6 +1,7 @@
 import React from 'react'
 import './TeamStyles.css'
 import rescue_data_var from '../assets/json/adoption.json'
+import {Link} from 'react-router-dom'
 
 const Adoption = () => {
   const rescue_data = rescue_data_var["dogs"] 
@@ -11,6 +12,10 @@ const Adoption = () => {
             <p className='note'> Help these dogs get a new home. We would be happy to assist in amy way we
                 can. <br/>  Schedule a time to visit and interact with them
             </p>
+            <div className='call-form2'>
+                {/* <button onClick={handleCall}>Set Appointment</button> */}
+                <Link to='/appointment'>Set Appointment</Link>
+            </div>
             <div className="rescue-grid">
                 {rescue_data.map((item,index) => (
                     <div className="rescue-dog"  key={`rescue_"${index}`}>

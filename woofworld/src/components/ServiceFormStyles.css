@@ -1,19 +1,31 @@
-/* .overlay-div{
-    width : 100vw;
-    height : 100vh;
-    background-color: #ffffff;
-    /* position: fixed; */
-    /* change to fixed on modal */
-    /* display: flex;
+.overlay-div{
+    padding-top: 7vh;
+    background-image: url(../assets/images/formdesktop.jpg) ;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    /* display: flex; */
+    /* justify-content: flex-end; */
+
+}
+
+/* /* .form-img{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 2000;
-    transition: 0.3s;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-}  */
+    width:90%;
+
+}
+
+.form-image img{
+    width: 700px;
+    max-height: 900px;
+}
+.form-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+ */
 
 
 form{
@@ -21,10 +33,34 @@ form{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin: auto;
-    max-width: 60%;
+    margin: 10vh auto;
+    width:20%;
     border-radius: 10px;
-    padding-top: 90px;
+    padding-top: 30px;
+    background-color: #fff;
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.datadiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datadiv label{
+    max-width: 30%;
+    flex: 1 1 30%;
+}
+
+.datadiv input{
+    flex: 1 1 70%;
 }
 
 .error-fix{
@@ -40,7 +76,8 @@ form{
 form h2{
     text-align: center;
     color: var(--heading);
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
+    padding-bottom: 5px;
 
 }
 
@@ -48,6 +85,7 @@ form label{
     margin-bottom: .5rem;
     font-size: 1.3rem;
     color: var(--heading);
+
 
 }
 
@@ -57,6 +95,7 @@ form input, textarea{
     font-size: 1rem;
     border: none;
     border-bottom: 1px solid;
+
 }
 
 form fieldset{
@@ -65,24 +104,36 @@ form fieldset{
     padding: 10px;
     margin-bottom: 1rem;
     font-size: 1.3em;
+
 }
 
 form fieldset p{
     color:#1B1B1B;
     font-size: .7em;
+
 }
 
 form fieldset legend{
     color: #1B1B1B;;
     font-size: 1.1em;
+
 }
 
 form fieldset label{
     color: #1B1B1B;;
-    font-size: 1.1em;
+    font-size: 0.9em;
+
+}
+form *{
+    background-color: inherit;
 }
 
-button{
+.options{
+    display: flex;
+    padding: 20px;
+}
+
+.options button{
     padding: 10px;
     width: 200px;
     margin: 0 auto;
@@ -92,82 +143,52 @@ button{
     font-size: 1.3em;
 }
 
-button:hover{
-    transform: scale(1.2);
-}
 
-.call-form{
-    /* border: 2px solid; */
-    padding: 15px 30px;
-    width: 150px;
-    background-color: var(--action);
-    color: #ffff;
-    text-align: center;
-    
-}
 
-.call-form a:hover{
-    transform: scale(1.2);
-}
 
-::placeholder {
-    color: #1B1B1B;
-    font-size: 1.5em;
-}
 
-.options{
-    display: flex;
-    padding: 20px;
-}
-
+/* scale css is coming from God knows where */
+.options button:hover{
+    transform: scale(1.0);
+} 
 @media screen and (max-width:700px) {
 
     form {
-        max-width: 90%;
+        width: 90%;
+        /* height: 60vh; */
+        /* overflow-y: scroll; */
     }
 
-    form label{
-        font-size: 1.3em;
-    }
 
-    form input, textarea{
-        font-size: 0.7rem;
-    }
-
-    form fieldset{
-        font-size: 1.5em;
-    }
-
-    form fieldset p{
-        font-size: .5em;
-    }
-    
-    form fieldset legend{
-        font-size: 1.2em;
-    }
-    
+    form input, textarea, form label, form fieldset,
+    form fieldset legend,
     form fieldset label{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
-    form p{
-        font-size: 0.7em;
+    form em{
+        font-size: 0.3em;
     }
 
     form h2{
-        font-size: 1.9em;
-        padding-bottom: 30px;
+        font-size: 1.2em;
+    }
+    .options button{
+        font-size: 0.9em;
+        width: 100px;
+        padding:3px;
     }
 
-    form button{
-        padding: 10px;
-        width: 130px;
-        margin: 0 auto;
-        background-color: var(--action);
-        color: white;
-        border: none;
-        font-size: 1em;
+    .field{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr ;
     }
+
+    .field p{
+        grid-column: span 2;
+    }
+
 
     /* .overlay-div{
         width : 100vw;
@@ -180,5 +201,22 @@ button:hover{
         right:0;
     } */
     
+
+}
+
+
+@media screen and (max-width:290px) {
+    form input, textarea, form label, form fieldset,
+    form fieldset legend,
+    form fieldset label{
+        font-size: 0.4em;
+    }
+
+    .options button{
+        font-size: 0.4em;
+        width: 80px;
+        padding:3px;
+    }
+
 
 }
