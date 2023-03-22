@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './NavbarStyles.css'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import logo from '../assets/images/logo.png'
 
@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <div>
         <header>
-            <HashLink to = "#landing-page" className="logo" >
+            <Link to = "/" className="logo" >
                 <img src={logo} alt="Woof World Logo"></img>
-            </HashLink>
+            </Link>
 
 
             <ul className={click ? "navbar active" : "navbar"}>

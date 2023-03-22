@@ -1,14 +1,6 @@
 .overlay-div{
     padding-top: 7vh;
-    /* background-image: url(../assets/images/formdesk.jpg) ;
-    background-repeat: no-repeat;
-    background-position: left; */
     display: flex;
-
-
-    /* display: flex; */
-    /* justify-content: flex-end; */
-
 }
 
 .form{
@@ -17,23 +9,6 @@
     justify-content: flex-end;
 }
 
-/* /* .form-img{
-    display: flex;
-    align-items: center;
-    width:90%;
-
-}
-
-.form-image img{
-    width: 700px;
-    max-height: 900px;
-}
-.form-flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} 
- */
 
 
 form{
