@@ -36,7 +36,7 @@
 }
 
 .service-details span{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 5px;
     color: var(--heading);
@@ -92,13 +92,13 @@ button:hover{
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
     .service-details span{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .service-details p{
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .call-form2 a{
@@ -106,4 +106,16 @@ button:hover{
         font-size: 0.9rem;
         
     }
-}
+
+
+    .services-grid{
+        grid-template-columns: repeat(auto-fit, minmax(min(400px,50%), 1fr));
+    }
+}   
+
+@media screen and (max-width:912px) {
+
+    .services-grid{
+        grid-template-columns: repeat(auto-fit, minmax(min(300px,50%), 1fr));
+    }
+}   

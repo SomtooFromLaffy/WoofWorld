@@ -11,8 +11,8 @@ const Footer = () => {
                 <p>Somtoo Chukwu </p>
                 <i>Aspiring Frontend Developer</i>
                 <div className='connect'>
-                    <FaLinkedin size={20} style={{color:'#000', marginRight: '2rem'}} />
-                    <FaGithub size={20} style={{color:'#000', marginRight: '2rem'}} />
+                    <a href="https://www.linkedin.com/in/somtoo-chukwu-b5189b159/" target="_blank" rel="noreferrer"><FaLinkedin size={20} style={{color:'#000', marginRight: '2rem'}} /></a>
+                    <a href="https://github.com/SomtooFromLaffy" target="_blank" rel="noreferrer"><FaGithub size={20} style={{color:'#000', marginRight: '2rem'}} /></a>
 
                 </div>
             </div>

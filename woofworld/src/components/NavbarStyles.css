@@ -4,12 +4,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 95%;
+    width: 100%;
     top: 0;
     right:0;
-    /* z-index: 1000; */
+    z-index: 1000;
     margin: 0 auto;
     background-color: #ffff;
+    padding: 2em;
 }
 .logo2{
     display: flex;
@@ -76,6 +77,7 @@ header {
         height:100vh;
         transition: 0.3s;
         z-index: 1000;
+        background-color: #ffff;
     }
 
     .navbar.active{
