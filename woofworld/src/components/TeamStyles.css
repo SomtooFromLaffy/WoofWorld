@@ -161,4 +161,17 @@
         width:200px;
     }
 
+    .member-details span,
+    .rescue-details span{
+    font-size: 1rem;
+    }
+
+
+    .member-details p,
+    .rescue-details p{
+
+    font-size: 0.7rem;
+
+    }
+
 }

@@ -19,3 +19,19 @@
         font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width:280px) {
+
+    .introduction h4,
+    .introduction i, 
+    .description h4{
+        font-size: 0.8rem;
+
+    }
+    
+    .introduction > p, 
+    .description p{
+        font-size: 0.7rem;
+    }
+
+}
