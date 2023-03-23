@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './TeamStyles.css'
 import rescue_data_var from '../assets/json/adoption.json'
-import {Link} from 'react-router-dom'
+import Modal from './Modal'
+// import {Link} from 'react-router-dom'
 
 const Adoption = () => {
+  const [modCall , setModCall] = useState(false)
   const rescue_data = rescue_data_var["dogs"] 
   return (
     <div>
@@ -13,8 +15,8 @@ const Adoption = () => {
                 can. <br/>  Schedule a time to visit and interact with them
             </p>
             <div className='call-form2'>
-                {/* <button onClick={handleCall}>Set Appointment</button> */}
-                <Link to='/appointment'>Set Appointment</Link>
+                <button onClick={()=>{setModCall(true)}}>Set Appointment</button>
+                {/* <Link to='/appointment'>Set Appointment</Link> */}
             </div>
             <div className="rescue-grid">
                 {rescue_data.map((item,index) => (
@@ -31,6 +33,8 @@ const Adoption = () => {
 
             </div>
         </section>
+
+        {modCall && <Modal />}
     </div>
   )
 }

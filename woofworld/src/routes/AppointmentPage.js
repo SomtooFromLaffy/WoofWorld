@@ -1,6 +1,6 @@
 import React from 'react'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+// import Contact from '../components/Contact'
+// import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ServiceForm from '../components/ServiceForm'
 // import { useNavigate } from 'react-router-dom'
@@ -10,9 +10,9 @@ const AppointmentPage = () => {
   return (
     <div>
         <Navbar />    
-        <ServiceForm closeForm={false}/>
-        <Contact />
-        <Footer />
+        <ServiceForm />
+        {/* <Contact /> */}
+        {/* <Footer /> */}
     </div>
   )
 }
